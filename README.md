@@ -1,3 +1,8 @@
+## Getting Started
+
+1. Go to https://ancient-hamlet-90618.herokuapp.com/
+2. login
+
 The database is seeded with test data. Credentials to log in as an employer:
 - email: test1@test.com, test2@test.com, test3@test.com, test4@test.com, test5@test.com
 - password: 1234567890
@@ -12,4 +17,5 @@ Single Table Inheritance (STI) was implemented for the two types of authenticate
 
 ## Authentication & Authorization
 
-Because only login was asked for, I used Bcrypt and `has_secure_password` to keep it simple. If full authenication was asked for, I'd use Devise or Clearnace for authentication, then cancancan or pundit for authorization.
+Because only login was asked for, I used Bcrypt and `has_secure_password` to keep it simple. If full authentication was asked for, I'd use Devise or Clearance for authentication, then cancancan or pundit for authorization.
+
