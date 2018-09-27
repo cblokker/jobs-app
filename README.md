@@ -17,5 +17,5 @@ Single Table Inheritance (STI) was implemented for the two types of authenticate
 
 ## Authentication & Authorization
 
-Because only login was asked for, I used Bcrypt and `has_secure_password` to keep it simple. If full authentication was asked for, I'd use Devise or Clearance for authentication, then cancancan or pundit for authorization.
+Because only login was asked for, I used Bcrypt and `has_secure_password` to keep it simple. If full authentication was asked for, I'd use Devise or Clearance for authentication, then cancancan or pundit for authorization. In hindsight, I wished I used Clearance, as it  provided very convenient routing constraints.
 
