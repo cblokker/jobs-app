@@ -1,0 +1,16 @@
+_fixture:
+  model_class: Job
+valid:
+  id: 1
+  title: 'hi'
+  description: 'hi'
+  employer_id: 2
+valid_two:
+  id: 2
+  title: 'hi'
+  description: 'hi'
+  employer_id: 2
+invalid:
+  id: 3
+  title: 'hi'
+  description: 'hi'

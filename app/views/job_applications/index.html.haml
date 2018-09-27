@@ -1,0 +1,21 @@
+%br
+%br
+%br
+.container
+  .row
+    .col-md-8.mx-auto
+      = link_to 'New Job', new_job_path
+      %h1= "Job Applicants for #{current_user.name}"
+      - @jobs.each do |job|
+        .card
+          .card-body
+            %h5.card-title
+              = job.title
+              %span.badge.badge-dark.float-right
+                = job_applications_count(job) # counter cache
+          %ul.list-group.list-group-flush
+            - job.job_applications.each do |job_application|
+              %li.list-group-item= job_application.user_name
+        %br
+
+

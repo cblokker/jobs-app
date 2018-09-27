@@ -1,0 +1,15 @@
+.row
+  .col-md-8.mx-auto
+    - @jobs.each do |job|
+      .card
+        .card-body
+          = form_for @job_application, url: job_applications_path do |f|
+            = f.hidden_field :job_id, value: job.id
+            - if current_user.has_applied_to?(job)
+              = f.submit 'Applied', class: "btn btn-primary float-right", disabled: true
+            - else
+              = f.submit 'Apply now', class: "btn btn-primary float-right"
+          %h5.card-title= job.title
+          %p.card-text= job.employer_name
+          %p.card-text= job.description
+      %br

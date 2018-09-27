@@ -1,0 +1,5 @@
+_fixture:
+  model_class: JobApplication
+valid:
+  user_id: 1
+  job_id: 1

@@ -1,0 +1,13 @@
+valid_applicant:
+  id: 1
+  name: John
+  email: john@example.com
+  password_digest: <%= BCrypt::Password.create('testpassword', cost: 5) %>
+  type: Applicant
+valid_employer:
+  id: 2
+  name: John
+  email: john3@example.com
+  password_digest: <%= BCrypt::Password.create('testpassword', cost: 5) %>
+  type: Employer
+
