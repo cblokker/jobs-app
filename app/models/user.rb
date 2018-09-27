@@ -10,8 +10,4 @@ class User < ApplicationRecord
   def employer?
     type == 'Employer'
   end
-
-  # polymorphic approach
-  # belongs_to :userable, polymorphic: true, dependent: :destroy
-  # user just has :email, :password, :and deals w/ all auth
 end
