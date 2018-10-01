@@ -4,11 +4,11 @@
 2. login
 
 The database is seeded with test data. Credentials to log in as an employer:
-- email: test1@test.com, test2@test.com, test3@test.com, test4@test.com, test5@test.com
+- email: test@test1.com, test@test2.com, test@test3.com, test@test4.com, test@5test.com
 - password: 1234567890
 
  Credentials to log in as an applicant:
-- email: test6@test.com, test7@test.com, test8@test.com, test9@test.com
+- email: test@6test.com, test@test7.com, test@test8.com, test@test9.com, test@test10.com
 - password: 1234567890
  
 ## User
